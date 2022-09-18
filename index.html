@@ -53,38 +53,45 @@
                         <form class="order-form" name="order_form" autocomplete="off" novalidate>
                             <strong class="order-form-title">Оставьте свои данные, мы вам перезвоним</strong>
                             <div class="order-form-group" role="group">
-                                <label class="order-form-field">
+                                <label>
                                     <span class="order-form-label">Имя</span>
-                                    <input class="order-form-input" type="text" name="username" required/>
-                                    <svg class="order-form-icon" width="18" height="18">
-                                        <use href="./images/icons-defs.svg#form-person"></use>
-                                    </svg>
+                                    <div class="order-form-field">
+                                        <input class="order-form-input" type="text" name="username" required/>
+                                        <svg class="order-form-icon" width="12" height="12">
+                                            <use href="./images/icons-defs.svg#form-person"></use>
+                                        </svg>
+                                    </div>                                    
                                 </label>
-                                <label class="order-form-field">
+                                <label>
                                     <span class="order-form-label">Телефон</span>
-                                    <input class="order-form-input" type="tel" name="tel" required minlength="12" maxlength="12"/>
-                                    <svg data-modal-close="order-form-icon" width="18" height="18" class="order-form-icon">
-                                        <use href="./images/icons-defs.svg#form-tel"></use>
-                                    </svg>
+                                    <div class="order-form-field">
+                                        <input class="order-form-input" type="tel" name="tel" required minlength="12" maxlength="12"/>
+                                        <svg class="order-form-icon" width="13" height="13" class="order-form-icon">
+                                            <use href="./images/icons-defs.svg#form-tel"></use>
+                                        </svg>
+                                    </div>                                    
                                 </label>
-                                <label class="order-form-field">
+                                <label>
                                     <span class="order-form-label">Почта</span>
-                                    <input class="order-form-input" type="email" name="email" required/>
-                                    <svg data-modal-close="order-form-icon" width="18" height="18" class="order-form-icon">
-                                        <use href="./images/icons-defs.svg#form-mail"></use>
-                                    </svg>
+                                    <div class="order-form-field">
+                                        <input class="order-form-input" type="email" name="email" required/>
+                                        <svg class="order-form-icon" width="15" height="12" class="order-form-icon">
+                                            <use href="./images/icons-defs.svg#form-mail"></use>
+                                        </svg>
+                                    </div>                                    
                                 </label>
                                 <label class="order-form-field">
-                                <span class="order-form-label">Комментарий</span>
-                                <textarea class="order-form-message" name="comment" rows="10" placeholder="Введите текст"></textarea>
+                                    <span class="order-form-label">Комментарий</span>
+                                    <textarea class="order-form-message" name="comment" rows="10" placeholder="Введите текст"></textarea>
                                 </label>
-                            </div>      
+                            </div>
                             <label class="order-form-agreement">
                                 <input class="order-form-checkbox" type="checkbox" name="agreement" value="agreement"/>
+                                <span class="fake-checkmark"></span>
                                 <span class="order-form-description">Соглашаюсь с рассылкой и принимаю 
                                     <a class="order-form-link" href="">Условия договора</a>
                                 </span>
-                            </label>                            
+                            </label>                                                      
                             <button class="order-form-btn" type="submit">Отправить</button>
                         </form>                        
                     </div>
