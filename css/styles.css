@@ -234,11 +234,16 @@ img{
     fill: var(--text-secondary-color);
     transition: color var(--anima-timing);
 }
-.modal-icon:hover,
-.modal-icon:focus{
+.modal-btn:hover, 
+.modal-btn:focus{
+    outline: none;
+}
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon{    
     fill: var(--accent-secondary-color);
 }
-.order-form{    
+.order-form{
+    margin-bottom: 10px;    
 }
 .order-form-title{
     font-weight: 700;
@@ -252,6 +257,7 @@ img{
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
+    margin-top: 12px;
 }
 .order-form-field {
     position: relative;
@@ -259,7 +265,6 @@ img{
 .order-form-label {
     display: flex;
     align-items: flex-start;
-    margin-top: 10px;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -293,6 +298,7 @@ img{
     transform: translateY(-50%);
 }
 .order-form-message{
+    display: block;
     resize: none;
     width: 448px;
     height: 120px;
@@ -326,7 +332,7 @@ img{
 .order-form-checkbox:checked + .fake-checkmark{
     background-color: var(--accent-secondary-color);
     border-color: transparent;
-    background-image: url(../images/checkmark.svg);
+    background-image: url(../images/check-mark.svg);
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
@@ -355,9 +361,11 @@ img{
     letter-spacing: 0.06em;
     color: var(--accent-primary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
     background-color: var(--accent-secondary-color);
     transition: color var(--anima-timing);
+    cursor: pointer;
 }
 .order-form-btn:hover,
 .order-form-btn:focus{
@@ -740,12 +748,20 @@ img{
     background-color: var(--hero-background-color);
 }
 .footer-newsletter-btn{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
     background-color: var(--accent-secondary-color);
+    cursor: pointer;
+}
+.footer-newsletter-btn:hover,
+.footer-newsletter-btn:focus{
+    background-color: var(--hero-button-accent-color);
 }
 .newsletter-btn-name {
     margin-right: 10px;
@@ -756,7 +772,6 @@ img{
     color: var(--accent-primary-color);
 }
 .newsletter-btn-icon {
-    position: absolute;
     fill: var(--accent-primary-color);
 }
 .footer-newsletter-discription input::placeholder{

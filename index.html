@@ -50,10 +50,10 @@
                                 <use href="./images/icons-defs.svg#modal-close"></use>
                             </svg>
                         </button>                        
-                        <form class="order-form" name="order_form" autocomplete="off" novalidate>
+                        <form name="order_form" autocomplete="off" novalidate>
                             <strong class="order-form-title">Оставьте свои данные, мы вам перезвоним</strong>
                             <div class="order-form-group" role="group">
-                                <label>
+                                <label class="order-form">
                                     <span class="order-form-label">Имя</span>
                                     <div class="order-form-field">
                                         <input class="order-form-input" type="text" name="username" required/>
@@ -62,7 +62,7 @@
                                         </svg>
                                     </div>                                    
                                 </label>
-                                <label>
+                                <label class="order-form">
                                     <span class="order-form-label">Телефон</span>
                                     <div class="order-form-field">
                                         <input class="order-form-input" type="tel" name="tel" required minlength="12" maxlength="12"/>
@@ -71,7 +71,7 @@
                                         </svg>
                                     </div>                                    
                                 </label>
-                                <label>
+                                <label class="order-form">
                                     <span class="order-form-label">Почта</span>
                                     <div class="order-form-field">
                                         <input class="order-form-input" type="email" name="email" required/>
@@ -504,7 +504,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-newsletter-box">
+            <form class="footer-newsletter-box">
                 <strong class="footer-social-title">Подпишитесь на рассылку</strong>
                 <div class="footer-newsletter-discription">
                     <input class="footer-newsletter-input" type="text" name="e-mail" placeholder="E-mail">
@@ -515,7 +515,7 @@
                         </svg>
                     </button>
                 </div>                
-            </div>
+            </form>
         </div>             
     </footer>
     <script src="./js/modal.js"></script>    
