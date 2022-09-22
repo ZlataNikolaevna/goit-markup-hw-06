@@ -653,8 +653,8 @@ img{
     letter-spacing: 0.03em;
     color: var(--accent-primary-color);
 }
-.project-card:hover .project-overlay,
-.progect-card:focus .project-overlay{
+.project-item:hover .project-overlay,
+.project-item:focus .project-overlay{
     transform: translateY(0);
 }
 
